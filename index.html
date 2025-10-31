@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of Amel Adelia - Head of Marketing and Sales Executive with expertise in leading brands like CGV Cinemas, Swissotel, and Mercure Hotels">
+    <meta name="keywords" content="Amel Adelia, marketing executive, sales leadership, digital marketing, brand strategy, CGV, Swissotel, Mercure">
+    <meta name="author" content="Amel Adelia">
+    
+    <title>Amel Adelia - Marketing & Sales Executive Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#007aff',
+                            600: '#0056cc',
+                            700: '#004bb3',
+                            900: '#1e3a8a'
+                        },
+                        secondary: {
+                            400: '#ff9f0a',
+                            500: '#f59e0b',
+                            600: '#d97706'
+                        },
+                        dark: {
+                            primary: '#121212',
+                            secondary: '#1e1e1e',
+                            tertiary: '#2a2a2a'
+                        }
+                    },
+                    fontFamily: {
+                        'apple': ['-apple-system', 'BlinkMacSystemFont', 'SF Pro Display', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.6s ease-out',
+                        'slide-in-right': 'slideInRight 0.6s ease-out',
+                        'float': 'float 6s ease-in-out infinite',
+                        'bounce-gentle': 'bounceGentle 2s infinite'
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        slideInRight: {
+                            '0%': { opacity: '0', transform: 'translateX(30px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' }
+                        },
+                        bounceGentle: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        }
+                    },
+                    backdropBlur: {
+                        xs: '2px'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS for additional styling -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Emergency fixes CSS -->
+    <link rel="stylesheet" href="css/emergency-fixes.css">
+    
+    <!-- Chart.js for data visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="font-apple bg-white dark:bg-dark-primary text-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/95 dark:bg-dark-primary/95 backdrop-blur-lg border-b border-gray-200 dark:border-gray-700 z-40 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#home" class="logo-animate text-2xl font-bold text-gray-900 dark:text-white hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-200">
+                        Amel Adelia
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8" id="nav-menu">
+                    <a href="#home" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 font-medium transition-colors duration-200 relative group">
+                        Home
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#about" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 font-medium transition-colors duration-200 relative group">
+                        About
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#experience" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 font-medium transition-colors duration-200 relative group">
+                        Experience
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#achievements" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 font-medium transition-colors duration-200 relative group">
+                        Achievements
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#contact" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 font-medium transition-colors duration-200 relative group">
+                        Contact
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="assets/images/Amel Adelia_Professional CV.pdf" target="_blank" class="bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-xl font-medium transition-all duration-200 transform hover:-translate-y-0.5 shadow-lg hover:shadow-xl flex items-center space-x-2" id="download-pdf">
+                        <i class="fas fa-download text-sm"></i>
+                        <span>Download CV</span>
+                    </a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="hamburger p-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200" id="hamburger">
+                        <span class="sr-only">Open main menu</span>
+                        <div class="w-6 h-6 relative">
+                            <span class="bar absolute h-0.5 w-6 bg-current transform transition-all duration-300 top-1"></span>
+                            <span class="bar absolute h-0.5 w-6 bg-current transform transition-all duration-300 top-3"></span>
+                            <span class="bar absolute h-0.5 w-6 bg-current transform transition-all duration-300 top-5"></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation Menu -->
+            <div class="md:hidden hidden mobile-menu-animate" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-dark-primary border-t border-gray-200 dark:border-gray-700">
+                    <a href="#home" class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg transition-all duration-200 hover-lift-xs">Home</a>
+                    <a href="#about" class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg transition-all duration-200 hover-lift-xs">About</a>
+                    <a href="#experience" class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg transition-all duration-200 hover-lift-xs">Experience</a>
+                    <a href="#achievements" class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg transition-all duration-200 hover-lift-xs">Achievements</a>
+                    <a href="#contact" class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg transition-all duration-200 hover-lift-xs">Contact</a>
+                    <a href="assets/images/Amel Adelia_Professional CV.pdf" target="_blank" class="block mx-3 mt-4 bg-primary-500 text-white px-4 py-2 rounded-xl font-medium text-center btn-hover-glow" id="mobile-download-pdf">
+                        <i class="fas fa-download mr-2"></i>Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen bg-gradient-to-br from-gray-50 to-white dark:from-dark-primary dark:to-dark-secondary flex items-center relative overflow-hidden pt-16">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 bg-gradient-to-r from-primary-500/5 to-secondary-500/5 dark:from-primary-500/10 dark:to-secondary-500/10"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <!-- Hero Content -->
+                <div class="space-y-8">
+                    <div class="space-y-6">
+                        <h1 class="hero-animate text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-gray-900 dark:text-white">
+                            <span class="block">Marketing & Sales</span>
+                            <span class="block bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent">
+                                Executive Leader
+                            </span>
+                        </h1>
+                        <p class="hero-animate text-xl lg:text-2xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl">
+                            Driving growth through strategic marketing initiatives and sales excellence. 
+                            Transforming brands and building high-performing teams that deliver exceptional results.
+                        </p>
+                    </div>
+                    
+                    <!-- Stats -->
+                    <div class="hero-animate grid grid-cols-3 gap-6 lg:gap-8 py-8">
+                        <div class="text-center p-4 bg-white/50 dark:bg-dark-tertiary/50 backdrop-blur-sm rounded-2xl border border-gray-200/50 dark:border-gray-700/50 hover-lift-sm hover-scale-sm">
+                            <div class="text-3xl lg:text-4xl font-bold text-primary-500 mb-2">10+</div>
+                            <div class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Years Experience</div>
+                        </div>
+                        <div class="text-center p-4 bg-white/50 dark:bg-dark-tertiary/50 backdrop-blur-sm rounded-2xl border border-gray-200/50 dark:border-gray-700/50 hover-lift-sm hover-scale-sm">
+                            <div class="text-3xl lg:text-4xl font-bold text-primary-500 mb-2">150%</div>
+                            <div class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Avg. Growth Rate</div>
+                        </div>
+                        <div class="text-center p-4 bg-white/50 dark:bg-dark-tertiary/50 backdrop-blur-sm rounded-2xl border border-gray-200/50 dark:border-gray-700/50 hover-lift-sm hover-scale-sm">
+                            <div class="text-3xl lg:text-4xl font-bold text-primary-500 mb-2">50+</div>
+                            <div class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Campaigns Led</div>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="hero-animate flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="#achievements" class="bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-2xl font-semibold btn-hover-lift btn-hover-glow shadow-lg text-center">
+                            View My Work
+                        </a>
+                        <a href="#contact" class="border-2 border-primary-500 text-primary-500 dark:text-primary-400 hover:bg-primary-500 hover:text-white px-8 py-4 rounded-2xl font-semibold btn-hover-lift text-center">
+                            Get In Touch
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Hero Image -->
+                <div class="relative animate-slide-in-right">
+                    <div class="relative max-w-md mx-auto lg:max-w-lg">
+                        <!-- Main Image -->
+                        <div class="relative z-10">
+                            <img src="assets/images/my_photo.jpeg" alt="Amel Adelia - Professional headshot" 
+                                 class="w-full h-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                        </div>
+                        
+                        <!-- Decorative Elements -->
+                        <div class="absolute -top-4 -right-4 w-full h-full bg-gradient-to-br from-primary-500/20 to-secondary-500/20 rounded-3xl animate-float"></div>
+                        <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-primary-500/10 dark:bg-primary-500/20 rounded-full blur-xl"></div>
+                        <div class="absolute top-1/2 -right-8 w-24 h-24 bg-secondary-500/10 dark:bg-secondary-500/20 rounded-full blur-lg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Showcase Section -->
+    <section class="py-16 bg-gradient-to-r from-gray-100 to-gray-200 dark:from-dark-secondary dark:to-dark-tertiary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                    Trusted by Leading Brands
+                </h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                    Proud to have worked with industry leaders and innovative companies across various sectors
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8 items-center">
+                <div class="flex items-center justify-center p-4 bg-white dark:bg-dark-primary rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:transform hover:-translate-y-1">
+                    <img src="assets/images/Klien yang pernah Deal/CGV_Cinemas.svg" alt="CGV Cinemas" class="max-h-12 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="flex items-center justify-center p-4 bg-white dark:bg-dark-primary rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:transform hover:-translate-y-1">
+                    <img src="assets/images/Klien yang pernah Deal/Swissotel_Hotels_and_Resorts_logo.svg.png" alt="Swissotel Hotels" class="max-h-12 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="flex items-center justify-center p-4 bg-white dark:bg-dark-primary rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:transform hover:-translate-y-1">
+                    <img src="assets/images/Klien yang pernah Deal/mercure-hotels-logo-png_seeklogo-322738.png" alt="Mercure Hotels" class="max-h-12 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="flex items-center justify-center p-4 bg-white dark:bg-dark-primary rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:transform hover:-translate-y-1">
+                    <img src="assets/images/Klien yang pernah Deal/Flimty-New-Logo-02-02-1024x486.webp" alt="Flimty" class="max-h-12 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="flex items-center justify-center p-4 bg-white dark:bg-dark-primary rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:transform hover:-translate-y-1">
+                    <img src="assets/images/Klien yang pernah Deal/biokul.webp" alt="Biokul" class="max-h-12 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="flex items-center justify-center p-4 bg-white dark:bg-dark-primary rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:transform hover:-translate-y-1">
+                    <img src="assets/images/Klien yang pernah Deal/wild-bean-cafe-logo-card.png" alt="Wild Bean Cafe" class="max-h-12 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="flex items-center justify-center p-4 bg-white dark:bg-dark-primary rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:transform hover:-translate-y-1">
+                    <img src="assets/images/Klien yang pernah Deal/BP_Helios_logo.svg" alt="BP Helios" class="max-h-12 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="flex items-center justify-center p-4 bg-white dark:bg-dark-primary rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:transform hover:-translate-y-1">
+                    <img src="assets/images/Klien yang pernah Deal/shigeru.png" alt="Shigeru" class="max-h-12 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="flex items-center justify-center p-4 bg-white dark:bg-dark-primary rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:transform hover:-translate-y-1">
+                    <img src="assets/images/Klien yang pernah Deal/seonggong-prestige.jpeg" alt="Seonggong Prestige" class="max-h-12 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="flex items-center justify-center p-4 bg-white dark:bg-dark-primary rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:transform hover:-translate-y-1">
+                    <img src="assets/images/Klien yang pernah Deal/logo (1).png" alt="Client Logo" class="max-h-12 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="flex items-center justify-center p-4 bg-white dark:bg-dark-primary rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:transform hover:-translate-y-1">
+                    <img src="assets/images/Klien yang pernah Deal/logo-tagline-MoaIKbD-20220523.jpeg" alt="Client Brand" class="max-h-12 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="flex items-center justify-center p-4 bg-white dark:bg-dark-primary rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:transform hover:-translate-y-1">
+                    <img src="assets/images/Klien yang pernah Deal/logo_40720230503161648.png" alt="Partner Company" class="max-h-12 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 dark:from-dark-secondary dark:via-dark-primary dark:to-dark-tertiary relative overflow-hidden">
+        <!-- Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-primary-500/5 to-secondary-500/5 dark:from-primary-500/10 dark:to-secondary-500/10"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 scroll-animate">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+                    About Me
+                    <span class="block w-20 h-1 bg-gradient-to-r from-primary-500 to-secondary-500 mx-auto mt-4 rounded-full"></span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    Passionate about driving business growth through innovative marketing strategies and data-driven insights
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+                <!-- About Content -->
+                <div class="space-y-8 scroll-animate-right">
+                    <div class="space-y-6">
+                        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                            As a seasoned Head of Marketing and Sales with over a decade of experience, I specialize in 
+                            developing comprehensive marketing strategies that drive measurable business growth. My expertise 
+                            spans digital marketing, brand development, sales optimization, and team leadership.
+                        </p>
+                        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                            Throughout my career, I've successfully led cross-functional teams, launched innovative campaigns 
+                            that exceeded ROI expectations, and built sustainable sales processes that consistently deliver 
+                            results. I'm passionate about leveraging data-driven insights to create compelling brand narratives 
+                            that resonate with target audiences.
+                        </p>
+                    </div>
+                    
+                    <!-- Core Expertise -->
+                    <div class="bg-white/50 dark:bg-dark-tertiary/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-200/50 dark:border-gray-700/50">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Core Expertise</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="flex items-center space-x-3 p-3 bg-white/70 dark:bg-dark-secondary/70 rounded-xl hover:transform hover:-translate-y-1 transition-all duration-300">
+                                <div class="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-600 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-chart-line text-white text-sm"></i>
+                                </div>
+                                <span class="font-medium text-gray-800 dark:text-gray-200">Strategic Marketing</span>
+                            </div>
+                            <div class="flex items-center space-x-3 p-3 bg-white/70 dark:bg-dark-secondary/70 rounded-xl hover:transform hover:-translate-y-1 transition-all duration-300">
+                                <div class="w-10 h-10 bg-gradient-to-br from-secondary-500 to-secondary-600 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-users text-white text-sm"></i>
+                                </div>
+                                <span class="font-medium text-gray-800 dark:text-gray-200">Team Leadership</span>
+                            </div>
+                            <div class="flex items-center space-x-3 p-3 bg-white/70 dark:bg-dark-secondary/70 rounded-xl hover:transform hover:-translate-y-1 transition-all duration-300">
+                                <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-bullhorn text-white text-sm"></i>
+                                </div>
+                                <span class="font-medium text-gray-800 dark:text-gray-200">Brand Development</span>
+                            </div>
+                            <div class="flex items-center space-x-3 p-3 bg-white/70 dark:bg-dark-secondary/70 rounded-xl hover:transform hover:-translate-y-1 transition-all duration-300">
+                                <div class="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-handshake text-white text-sm"></i>
+                                </div>
+                                <span class="font-medium text-gray-800 dark:text-gray-200">Sales Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- About Image & Certifications -->
+                <div class="space-y-8 scroll-animate-left">
+                    <!-- Professional Image -->
+                    <div class="relative max-w-lg mx-auto">
+                        <div class="relative z-10">
+                            <img src="assets/images/Meeting Klien Besar (Brand Owner, Managing Director)/IMG_2661.JPG" alt="Amel Adelia - Professional meeting" 
+                                 class="w-full h-auto max-h-96 object-cover rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="absolute -top-4 -right-4 w-full h-full bg-gradient-to-br from-primary-500/20 to-secondary-500/20 rounded-3xl animate-float"></div>
+                    </div>
+                    
+                    <!-- Certifications -->
+                    <div class="bg-white/50 dark:bg-dark-tertiary/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-200/50 dark:border-gray-700/50">
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            Certifications & Awards
+                        </h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Certificate 1 -->
+                            <div class="certificate-item group bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:translate-y-[-4px] border border-gray-100 dark:border-gray-700">
+                                <div class="aspect-[4/3] overflow-hidden">
+                                    <img src="assets/images/Sertifikat /IMG_3940.PNG" alt="Professional Certificate" 
+                                         class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                                </div>
+                                <div class="p-4">
+                                    <h5 class="font-semibold text-gray-800 dark:text-white text-sm">Professional Certificate</h5>
+                                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Digital Marketing Excellence</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Certificate 2 -->
+                            <div class="certificate-item group bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:translate-y-[-4px] border border-gray-100 dark:border-gray-700">
+                                <div class="aspect-[4/3] overflow-hidden">
+                                    <img src="assets/images/Sertifikat /IMG_3941.PNG" alt="Marketing Certification" 
+                                         class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                                </div>
+                                <div class="p-4">
+                                    <h5 class="font-semibold text-gray-800 dark:text-white text-sm">Marketing Certification</h5>
+                                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Strategic Marketing</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Certificate 3 -->
+                            <div class="certificate-item group bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:translate-y-[-4px] border border-gray-100 dark:border-gray-700">
+                                <div class="aspect-[4/3] overflow-hidden">
+                                    <img src="assets/images/Sertifikat /IMG_3943.PNG" alt="Industry Recognition" 
+                                         class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                                </div>
+                                <div class="p-4">
+                                    <h5 class="font-semibold text-gray-800 dark:text-white text-sm">Industry Recognition</h5>
+                                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Professional Achievement</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Certificate 4 -->
+                            <div class="certificate-item group bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:translate-y-[-4px] border border-gray-100 dark:border-gray-700">
+                                <div class="aspect-[4/3] overflow-hidden">
+                                    <img src="assets/images/Sertifikat /IMG_3947.JPG" alt="Professional Award" 
+                                         class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                                </div>
+                                <div class="p-4">
+                                    <h5 class="font-semibold text-gray-800 dark:text-white text-sm">Professional Award</h5>
+                                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Excellence in Marketing</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Certificate 5 -->
+                            <div class="certificate-item group bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:translate-y-[-4px] border border-gray-100 dark:border-gray-700">
+                                <div class="aspect-[4/3] overflow-hidden">
+                                    <img src="assets/images/Sertifikat /IMG_3950.PNG" alt="Excellence Certificate" 
+                                         class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                                </div>
+                                <div class="p-4">
+                                    <h5 class="font-semibold text-gray-800 dark:text-white text-sm">Excellence Certificate</h5>
+                                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Outstanding Performance</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Certificate 6 -->
+                            <div class="certificate-item group bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:translate-y-[-4px] border border-gray-100 dark:border-gray-700">
+                                <div class="aspect-[4/3] overflow-hidden">
+                                    <img src="assets/images/Sertifikat /IMG_3951.PNG" alt="Achievement Award" 
+                                         class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                                </div>
+                                <div class="p-4">
+                                    <h5 class="font-semibold text-gray-800 dark:text-white text-sm">Achievement Award</h5>
+                                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Leadership Recognition</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Achievement Gallery -->
+            <div class="mt-16">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Achievement Highlights</h3>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                        Visual documentation of key milestones and recognition in my professional journey
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="group cursor-pointer">
+                        <div class="relative overflow-hidden rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300">
+                            <img src="assets/images/Achievement /IMG_3944.PNG" alt="Professional Achievement" 
+                                 class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <h4 class="font-semibold text-lg">Professional Recognition</h4>
+                                <p class="text-sm text-gray-200">Industry achievement and milestone</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="group cursor-pointer">
+                        <div class="relative overflow-hidden rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300">
+                            <img src="assets/images/Achievement /IMG_3945.PNG" alt="Career Milestone" 
+                                 class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <h4 class="font-semibold text-lg">Career Milestone</h4>
+                                <p class="text-sm text-gray-200">Significant professional achievement</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="group cursor-pointer">
+                        <div class="relative overflow-hidden rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300">
+                            <img src="assets/images/Achievement /IMG_3946.PNG" alt="Excellence Award" 
+                                 class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <h4 class="font-semibold text-lg">Excellence Award</h4>
+                                <p class="text-sm text-gray-200">Recognition for outstanding performance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-20 bg-gradient-to-br from-white via-blue-50 to-purple-50 dark:from-dark-primary dark:via-dark-secondary dark:to-dark-tertiary relative overflow-hidden">
+        <!-- Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-l from-secondary-500/5 to-purple-500/5 dark:from-secondary-500/10 dark:to-purple-500/10"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 scroll-animate">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+                    Professional Journey
+                    <span class="block w-20 h-1 bg-gradient-to-r from-secondary-500 to-purple-500 mx-auto mt-4 rounded-full"></span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    Key milestones and achievements throughout my career in marketing and sales leadership
+                </p>
+            </div>
+            <!-- Timeline -->
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-secondary-500 to-purple-500 rounded-full hidden lg:block"></div>
+                
+                <div class="space-y-12">
+                    <!-- Timeline Item 1 -->
+                    <div class="relative flex flex-col lg:flex-row items-center scroll-animate-left">
+                        <!-- Timeline Marker -->
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-br from-secondary-500 to-purple-500 rounded-full border-4 border-white dark:border-dark-primary shadow-lg z-10 hidden lg:block"></div>
+                        
+                        <!-- Content -->
+                        <div class="w-full lg:w-5/12 lg:pr-8 mb-8 lg:mb-0">
+                            <div class="bg-white/70 dark:bg-dark-secondary/70 backdrop-blur-sm rounded-2xl p-8 border border-gray-200/50 dark:border-gray-700/50 shadow-lg hover-lift-sm card-hover">
+                                <div class="mb-6">
+                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Head of Marketing & Sales</h3>
+                                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                                        <span class="text-lg font-semibold text-primary-500 dark:text-primary-400">[Current Company]</span>
+                                        <span class="text-sm font-medium text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 px-3 py-1 rounded-full">2021 - Present</span>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                                    Leading integrated marketing and sales strategies, managing a team of 15+ professionals, 
+                                    and driving 40% year-over-year revenue growth through innovative campaign development.
+                                </p>
+                                <div class="space-y-3">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-2 h-2 bg-secondary-500 rounded-full mt-2 flex-shrink-0"></div>
+                                        <span class="text-gray-700 dark:text-gray-300">Increased brand awareness by 65% through multi-channel campaigns</span>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-2 h-2 bg-secondary-500 rounded-full mt-2 flex-shrink-0"></div>
+                                        <span class="text-gray-700 dark:text-gray-300">Implemented CRM system resulting in 30% improvement in lead conversion</span>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-2 h-2 bg-secondary-500 rounded-full mt-2 flex-shrink-0"></div>
+                                        <span class="text-gray-700 dark:text-gray-300">Launched successful product line generating $2M+ in first-year revenue</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hidden lg:block w-2/12"></div>
+                        <div class="w-full lg:w-5/12"></div>
+                    </div>
+                    
+                    <!-- Timeline Item 2 -->
+                    <div class="relative flex flex-col lg:flex-row items-center scroll-animate-right">
+                        <!-- Timeline Marker -->
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-br from-secondary-500 to-purple-500 rounded-full border-4 border-white dark:border-dark-primary shadow-lg z-10 hidden lg:block"></div>
+                        
+                        <!-- Content -->
+                        <div class="w-full lg:w-5/12"></div>
+                        <div class="hidden lg:block w-2/12"></div>
+                        
+                        <div class="w-full lg:w-5/12 lg:pl-8">
+                            <div class="bg-white/70 dark:bg-dark-secondary/70 backdrop-blur-sm rounded-2xl p-8 border border-gray-200/50 dark:border-gray-700/50 shadow-lg hover-lift-sm card-hover">
+                                <div class="mb-6">
+                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Senior Marketing Manager</h3>
+                                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                                        <span class="text-lg font-semibold text-primary-500 dark:text-primary-400">[Previous Company]</span>
+                                        <span class="text-sm font-medium text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 px-3 py-1 rounded-full">2018 - 2021</span>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                                    Developed and executed comprehensive marketing strategies, managed digital campaigns, 
+                                    and collaborated with sales teams to optimize lead generation and conversion processes.
+                                </p>
+                                <div class="space-y-3">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                                        <span class="text-gray-700 dark:text-gray-300">Achieved 120% of annual lead generation targets</span>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                                        <span class="text-gray-700 dark:text-gray-300">Reduced customer acquisition cost by 25%</span>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                                        <span class="text-gray-700 dark:text-gray-300">Led rebranding initiative that improved market positioning</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 3 -->
+                    <div class="relative flex flex-col lg:flex-row items-center scroll-animate-left">
+                        <!-- Timeline Marker -->
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-br from-secondary-500 to-purple-500 rounded-full border-4 border-white dark:border-dark-primary shadow-lg z-10 hidden lg:block"></div>
+                        
+                        <!-- Content -->
+                        <div class="w-full lg:w-5/12 lg:pr-8">
+                            <div class="bg-white/70 dark:bg-dark-secondary/70 backdrop-blur-sm rounded-2xl p-8 border border-gray-200/50 dark:border-gray-700/50 shadow-lg hover-lift-sm card-hover">
+                                <div class="mb-6">
+                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Marketing Specialist</h3>
+                                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                                        <span class="text-lg font-semibold text-primary-500 dark:text-primary-400">[Earlier Company]</span>
+                                        <span class="text-sm font-medium text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 px-3 py-1 rounded-full">2015 - 2018</span>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                                    Specialized in digital marketing campaigns, content strategy, and performance analytics. 
+                                    Built foundation in data-driven marketing and customer journey optimization.
+                                </p>
+                                <div class="space-y-3">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                                        <span class="text-gray-700 dark:text-gray-300">Increased website traffic by 200% through SEO optimization</span>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                                        <span class="text-gray-700 dark:text-gray-300">Developed content strategy that improved engagement by 150%</span>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                                        <span class="text-gray-700 dark:text-gray-300">Managed social media presence across multiple platforms</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hidden lg:block w-2/12"></div>
+                        <div class="w-full lg:w-5/12"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section id="case-studies" class="py-20 bg-gradient-to-br from-gray-900 to-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-white mb-4">Case Studies</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Successful campaigns and strategic initiatives that delivered exceptional results</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- CGV Case Study -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="h-48 bg-gray-900 flex items-center justify-center p-6">
+                        <img src="assets/images/Klien yang pernah Deal/CGV_Cinemas.svg" alt="Digital Transformation Campaign" class="max-h-28 max-w-[80%] object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Digital Transformation Campaign</h3>
+                        <p class="text-gray-300 mb-4">Complete digital overhaul resulting in 300% increase in online engagement and 45% boost in sales.</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-gray-700 p-3 rounded-lg text-center">
+                                <span class="block text-2xl font-bold text-blue-400">300%</span>
+                                <span class="text-sm text-gray-300">Engagement Increase</span>
+                            </div>
+                            <div class="bg-gray-700 p-3 rounded-lg text-center">
+                                <span class="block text-2xl font-bold text-green-400">45%</span>
+                                <span class="text-sm text-gray-300">Sales Growth</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Swissotel Case Study -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="h-48 bg-gray-900 flex items-center justify-center p-6">
+                        <img src="assets/images/Klien yang pernah Deal/Swissotel_Hotels_and_Resorts_logo.svg.png" alt="Brand Repositioning Strategy" class="max-h-28 max-w-[80%] object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Brand Repositioning Strategy</h3>
+                        <p class="text-gray-300 mb-4">Strategic brand refresh that improved market perception and increased customer loyalty by 60%.</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-gray-700 p-3 rounded-lg text-center">
+                                <span class="block text-2xl font-bold text-blue-400">60%</span>
+                                <span class="text-sm text-gray-300">Loyalty Increase</span>
+                            </div>
+                            <div class="bg-gray-700 p-3 rounded-lg text-center">
+                                <span class="block text-2xl font-bold text-green-400">85%</span>
+                                <span class="text-sm text-gray-300">Brand Recognition</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- BP Case Study -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="h-48 bg-gray-900 flex items-center justify-center p-6">
+                        <img src="assets/images/Klien yang pernah Deal/BP_Helios_logo.svg" alt="Sales Process Optimization" class="max-h-28 max-w-[80%] object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Sales Process Optimization</h3>
+                        <p class="text-gray-300 mb-4">Streamlined sales funnel and CRM implementation that reduced sales cycle by 40% and improved conversion rates.</p>
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="bg-gray-700 p-3 rounded-lg text-center">
+                                <span class="block text-2xl font-bold text-blue-400">40%</span>
+                                <span class="text-sm text-gray-300">Faster Sales Cycle</span>
+                            </div>
+                            <div class="bg-gray-700 p-3 rounded-lg text-center">
+                                <span class="block text-2xl font-bold text-green-400">25%</span>
+                                <span class="text-sm text-gray-300">Higher Conversion</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements & Metrics -->
+    <section id="achievements" class="py-20 bg-white dark:bg-dark-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 scroll-animate">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+                    Key Achievements
+                    <span class="block w-20 h-1 bg-gradient-to-r from-primary-500 to-secondary-500 mx-auto mt-4 rounded-full"></span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    Measurable results and performance metrics that demonstrate consistent excellence in marketing and sales leadership
+                </p>
+            </div>
+            
+            <!-- Metrics Dashboard -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-20">
+                <div class="bg-white dark:bg-dark-secondary rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-gray-700 scroll-animate hover-lift-sm card-hover stagger-1">
+                    <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl mb-6 hover-scale-sm">
+                        <i class="fas fa-chart-line text-2xl text-white"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-baseline">
+                            <span class="metric-number text-4xl font-bold text-gray-900 dark:text-white" data-target="150">0</span>
+                            <span class="text-2xl font-semibold text-secondary-500 ml-1">%</span>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400 font-medium">Average Revenue Growth</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white dark:bg-dark-secondary rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-gray-700 scroll-animate hover-lift-sm card-hover stagger-2">
+                    <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-secondary-500 to-secondary-600 rounded-xl mb-6 hover-scale-sm">
+                        <i class="fas fa-users text-2xl text-white"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-baseline">
+                            <span class="metric-number text-4xl font-bold text-gray-900 dark:text-white" data-target="50">0</span>
+                            <span class="text-2xl font-semibold text-secondary-500 ml-1">+</span>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400 font-medium">Campaigns Managed</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white dark:bg-dark-secondary rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-gray-700 scroll-animate hover-lift-sm card-hover stagger-3">
+                    <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl mb-6 hover-scale-sm">
+                        <i class="fas fa-trophy text-2xl text-white"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-baseline">
+                            <span class="metric-number text-4xl font-bold text-gray-900 dark:text-white" data-target="15">0</span>
+                            <span class="text-2xl font-semibold text-secondary-500 ml-1">+</span>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400 font-medium">Awards & Recognition</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white dark:bg-dark-secondary rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-gray-700 scroll-animate hover-lift-sm card-hover stagger-4">
+                    <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl mb-6 hover-scale-sm">
+                        <i class="fas fa-dollar-sign text-2xl text-white"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-baseline">
+                            <span class="metric-number text-4xl font-bold text-gray-900 dark:text-white" data-target="10">0</span>
+                            <span class="text-2xl font-semibold text-secondary-500 ml-1">M+</span>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400 font-medium">Revenue Generated</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Performance Charts with Optimized Heights -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+                <!-- Sales Performance Chart -->
+                <div class="bg-white dark:bg-dark-secondary rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-gray-700 scroll-animate-left hover-lift-sm card-hover">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Sales Performance Over Time</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Consistent growth trajectory across multiple years</p>
+                    </div>
+                    <div class="relative">
+                        <!-- Optimized Chart Height: 400px on desktop, 300px on mobile -->
+                        <div class="h-[300px] lg:h-[400px] w-full">
+                            <canvas id="salesChart" class="w-full h-full"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Marketing ROI Chart -->
+                <div class="bg-white dark:bg-dark-secondary rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-gray-700 scroll-animate-right hover-lift-sm card-hover">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Marketing ROI by Channel</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Distribution of marketing investment returns</p>
+                    </div>
+                    <div class="relative">
+                        <!-- Optimized Chart Height: 400px on desktop, 300px on mobile -->
+                        <div class="h-[300px] lg:h-[400px] w-full flex items-center justify-center">
+                            <canvas id="roiChart" class="max-w-full max-h-full"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Matrix -->
+    <section id="skills" class="skills-section py-16 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <!-- Section Header with improved visual hierarchy -->
+            <div class="text-center mb-12" data-aos="fade-up">
+                <div class="inline-flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary-500 mr-2" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                    </svg>
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Skills & Competencies</h2>
+                </div>
+                <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                    Technical expertise and leadership capabilities
+                </p>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary-500 to-secondary-500 mx-auto mt-6 rounded-full"></div>
+            </div>
+            
+            <!-- Skills Content with improved grid layout -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <!-- Marketing Strategy -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700 transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-6">
+                        <div class="flex items-center mb-6">
+                            <div class="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900 flex items-center justify-center mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600 dark:text-primary-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" />
+                                    <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Marketing Strategy</h3>
+                        </div>
+                        
+                        <div class="space-y-5">
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Digital Marketing</span>
+                                    <span class="text-sm font-semibold text-primary-600 dark:text-primary-400">95%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-primary-600 to-primary-400 h-2.5 rounded-full transition-all duration-500" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Brand Strategy</span>
+                                    <span class="text-sm font-semibold text-primary-600 dark:text-primary-400">90%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-primary-600 to-primary-400 h-2.5 rounded-full transition-all duration-500" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Content Marketing</span>
+                                    <span class="text-sm font-semibold text-primary-600 dark:text-primary-400">88%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-primary-600 to-primary-400 h-2.5 rounded-full transition-all duration-500" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium text-gray-700 dark:text-gray-300">SEO/SEM</span>
+                                    <span class="text-sm font-semibold text-primary-600 dark:text-primary-400">85%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-primary-600 to-primary-400 h-2.5 rounded-full transition-all duration-500" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sales Excellence -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700 transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-6">
+                        <div class="flex items-center mb-6">
+                            <div class="w-10 h-10 rounded-full bg-secondary-100 dark:bg-secondary-900 flex items-center justify-center mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-600 dark:text-secondary-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Sales Excellence</h3>
+                        </div>
+                        
+                        <div class="space-y-5">
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Sales Strategy</span>
+                                    <span class="text-sm font-semibold text-secondary-600 dark:text-secondary-400">92%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-secondary-600 to-secondary-400 h-2.5 rounded-full transition-all duration-500" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium text-gray-700 dark:text-gray-300">CRM Management</span>
+                                    <span class="text-sm font-semibold text-secondary-600 dark:text-secondary-400">89%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-secondary-600 to-secondary-400 h-2.5 rounded-full transition-all duration-500" style="width: 89%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Lead Generation</span>
+                                    <span class="text-sm font-semibold text-secondary-600 dark:text-secondary-400">91%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-secondary-600 to-secondary-400 h-2.5 rounded-full transition-all duration-500" style="width: 91%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Sales Analytics</span>
+                                    <span class="text-sm font-semibold text-secondary-600 dark:text-secondary-400">87%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-secondary-600 to-secondary-400 h-2.5 rounded-full transition-all duration-500" style="width: 87%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Leadership & Management -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700 transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-aos="fade-up" data-aos-delay="300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-6">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 dark:text-blue-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Leadership & Management</h3>
+                        </div>
+                        
+                        <div class="space-y-5">
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Team Leadership</span>
+                                    <span class="text-sm font-semibold text-blue-600 dark:text-blue-400">96%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-blue-600 to-blue-400 h-2.5 rounded-full transition-all duration-500" style="width: 96%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Strategic Planning</span>
+                                    <span class="text-sm font-semibold text-blue-600 dark:text-blue-400">93%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-blue-600 to-blue-400 h-2.5 rounded-full transition-all duration-500" style="width: 93%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Project Management</span>
+                                    <span class="text-sm font-semibold text-blue-600 dark:text-blue-400">90%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-blue-600 to-blue-400 h-2.5 rounded-full transition-all duration-500" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Data Analysis</span>
+                                    <span class="text-sm font-semibold text-blue-600 dark:text-blue-400">86%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-blue-600 to-blue-400 h-2.5 rounded-full transition-all duration-500" style="width: 86%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tools & Technologies with improved grid layout -->
+            <div class="mt-16" data-aos="fade-up" data-aos-delay="400">
+                <h3 class="text-2xl font-bold text-center text-gray-900 dark:text-white mb-8 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-primary-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd" />
+                    </svg>
+                    Tools & Technologies
+                </h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+                    <div class="bg-white dark:bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center text-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 h-24 group">
+                        <i class="fab fa-google text-2xl text-primary-500 group-hover:text-primary-600 transition-colors duration-300 mb-2"></i>
+                        <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Google Analytics</span>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center text-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 h-24 group">
+                        <i class="fab fa-hubspot text-2xl text-primary-500 group-hover:text-primary-600 transition-colors duration-300 mb-2"></i>
+                        <span class="text-sm font-medium text-gray-700 dark:text-gray-300">HubSpot</span>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center text-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 h-24 group">
+                        <i class="fas fa-chart-bar text-2xl text-primary-500 group-hover:text-primary-600 transition-colors duration-300 mb-2"></i>
+                        <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Salesforce</span>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center text-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 h-24 group">
+                        <i class="fab fa-adobe text-2xl text-primary-500 group-hover:text-primary-600 transition-colors duration-300 mb-2"></i>
+                        <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Adobe Creative Suite</span>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center text-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 h-24 group">
+                        <i class="fab fa-mailchimp text-2xl text-primary-500 group-hover:text-primary-600 transition-colors duration-300 mb-2"></i>
+                        <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Mailchimp</span>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center text-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 h-24 group">
+                        <i class="fab fa-slack text-2xl text-primary-500 group-hover:text-primary-600 transition-colors duration-300 mb-2"></i>
+                        <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Slack</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20 bg-gradient-to-br from-gray-50 to-white dark:from-dark-primary dark:to-dark-secondary relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary-500/5 to-secondary-500/5 dark:from-primary-500/10 dark:to-secondary-500/10"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 scroll-animate">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">Client Testimonials</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300">What colleagues and clients say about working with me</p>
+            </div>
+
+            <!-- Slider -->
+            <div class="testimonials-slider scroll-animate stagger-1 relative">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-item block">
+                    <div class="testimonial-content bg-white/80 dark:bg-dark-tertiary/80 backdrop-blur-sm border border-gray-200/60 dark:border-gray-700/60 rounded-2xl p-6 md:p-8 shadow-sm">
+                        <p class="text-gray-700 dark:text-gray-300 italic text-lg leading-relaxed">"[Name] transformed our marketing approach completely. Her strategic vision and execution capabilities are exceptional. Under her leadership, we saw unprecedented growth in both brand awareness and revenue."</p>
+                        <div class="testimonial-author mt-6 flex items-center gap-4">
+                            <img src="assets/images/Meeting Klien Besar (Brand Owner, Managing Director)/IMG_2660.JPG" alt="Client testimonial" loading="lazy" class="w-14 h-14 rounded-full object-cover border border-gray-200 dark:border-gray-700">
+                            <div class="author-info">
+                                <h4 class="font-semibold text-gray-900 dark:text-white">John Smith</h4>
+                                <span class="text-sm text-gray-600 dark:text-gray-400">CEO, Tech Innovations Inc.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-item hidden">
+                    <div class="testimonial-content bg-white/80 dark:bg-dark-tertiary/80 backdrop-blur-sm border border-gray-200/60 dark:border-gray-700/60 rounded-2xl p-6 md:p-8 shadow-sm">
+                        <p class="text-gray-700 dark:text-gray-300 italic text-lg leading-relaxed">"Working with [Name] was a game-changer for our sales team. Her data-driven approach and innovative strategies helped us exceed our targets by 40%. She's a true marketing and sales leader."</p>
+                        <div class="testimonial-author mt-6 flex items-center gap-4">
+                            <img src="assets/images/Meeting Klien Besar (Brand Owner, Managing Director)/IMG_2661.JPG" alt="Client testimonial" loading="lazy" class="w-14 h-14 rounded-full object-cover border border-gray-200 dark:border-gray-700">
+                            <div class="author-info">
+                                <h4 class="font-semibold text-gray-900 dark:text-white">Sarah Johnson</h4>
+                                <span class="text-sm text-gray-600 dark:text-gray-400">VP Sales, Growth Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-item hidden">
+                    <div class="testimonial-content bg-white/80 dark:bg-dark-tertiary/80 backdrop-blur-sm border border-gray-200/60 dark:border-gray-700/60 rounded-2xl p-6 md:p-8 shadow-sm">
+                        <p class="text-gray-700 dark:text-gray-300 italic text-lg leading-relaxed">"[Name]'s ability to align marketing and sales teams is remarkable. She created synergy that resulted in our most successful product launch ever. Her leadership style is both inspiring and results-driven."</p>
+                        <div class="testimonial-author mt-6 flex items-center gap-4">
+                            <img src="assets/images/Meeting Klien Besar (Brand Owner, Managing Director)/IMG_3611.JPG" alt="Client testimonial" loading="lazy" class="w-14 h-14 rounded-full object-cover border border-gray-200 dark:border-gray-700">
+                            <div class="author-info">
+                                <h4 class="font-semibold text-gray-900 dark:text-white">Michael Chen</h4>
+                                <span class="text-sm text-gray-600 dark:text-gray-400">CMO, Digital Dynamics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="testimonial-navigation flex justify-center items-center gap-3 mt-8">
+                <button class="testimonial-nav prev p-2.5 rounded-full border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" id="prevTestimonial" aria-label="Previous testimonial">
+                    <span class="sr-only">Previous testimonial</span>
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="testimonial-nav next p-2.5 rounded-full border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" id="nextTestimonial" aria-label="Next testimonial">
+                    <span class="sr-only">Next testimonial</span>
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <!-- Pagination dots will be injected here by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-dark-tertiary via-dark-secondary to-dark-primary relative overflow-hidden">
+        <!-- Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 scroll-animate">
+                <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">
+                    Let's Connect
+                    <span class="block w-20 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto mt-4 rounded-full"></span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    Ready to discuss your next marketing challenge or opportunity? Let's create something amazing together.
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
+                <!-- Contact Info -->
+                <div class="space-y-8 scroll-animate-right">
+                    <!-- Contact Methods -->
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4 p-6 bg-dark-secondary/70 backdrop-blur-sm rounded-2xl border border-gray-700/50 hover:transform hover:-translate-y-1 transition-all duration-300">
+                            <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white">Email</h4>
+                                <a href="mailto:name@email.com" class="text-purple-400 hover:text-purple-300 transition-colors duration-200">name@email.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4 p-6 bg-dark-secondary/70 backdrop-blur-sm rounded-2xl border border-gray-700/50 hover:transform hover:-translate-y-1 transition-all duration-300">
+                            <div class="w-12 h-12 bg-gradient-to-br from-pink-500 to-pink-600 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white">Phone</h4>
+                                <a href="tel:+1234567890" class="text-pink-400 hover:text-pink-300 transition-colors duration-200">+1 (234) 567-8900</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4 p-6 bg-dark-secondary/70 backdrop-blur-sm rounded-2xl border border-gray-700/50 hover:transform hover:-translate-y-1 transition-all duration-300">
+                            <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white">Location</h4>
+                                <span class="text-gray-400">City, State, Country</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="bg-dark-tertiary/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50">
+                        <h4 class="text-xl font-bold text-white mb-6">Connect on Social</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center text-white hover:transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-500 rounded-xl flex items-center justify-center text-white hover:transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-xl flex items-center justify-center text-white hover:transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gradient-to-br from-gray-600 to-gray-700 rounded-xl flex items-center justify-center text-white hover:transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="scroll-animate-left">
+                    <div class="bg-dark-secondary/70 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50 shadow-lg">
+                        <h3 class="text-2xl font-bold text-white mb-6">Send a Message</h3>
+                        <form id="contactForm" class="space-y-6">
+                            <div>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required
+                                       class="w-full px-4 py-3 bg-dark-tertiary/60 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200">
+                            </div>
+                            <div>
+                                <input type="email" id="email" name="email" placeholder="Your Email" required
+                                       class="w-full px-4 py-3 bg-dark-tertiary/60 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200">
+                            </div>
+                            <div>
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required
+                                       class="w-full px-4 py-3 bg-dark-tertiary/60 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200">
+                            </div>
+                            <div>
+                                <textarea id="message" name="message" placeholder="Your Message" rows="5" required
+                                          class="w-full px-4 py-3 bg-dark-tertiary/60 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 resize-none"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                                <i class="fas fa-paper-plane mr-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 dark:bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+                <div class="text-center md:text-left">
+                    <p class="text-gray-300">&copy; 2024 Amel Adelia. All rights reserved.</p>
+                    <p class="text-sm text-gray-400 mt-1">Designed with passion for excellence.</p>
+                </div>
+                <div class="flex flex-wrap justify-center md:justify-end space-x-6">
+                    <a href="#home" class="text-gray-300 hover:text-white transition-colors duration-200">Home</a>
+                    <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-200">About</a>
+                    <a href="#experience" class="text-gray-300 hover:text-white transition-colors duration-200">Experience</a>
+                    <a href="#achievements" class="text-gray-300 hover:text-white transition-colors duration-200">Achievements</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-200">Contact</a>
+                    <a href="assets/images/Amel Adelia_Professional CV.pdf" target="_blank" id="footer-download-cv" class="bg-gradient-to-r from-primary-500 to-secondary-500 text-white px-4 py-2 rounded-lg hover:from-primary-600 hover:to-secondary-600 transition-all duration-200">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Case Study Modal -->
+    <div id="caseStudyModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/animations.js"></script>
+        <!-- Dark mode enforcement and case studies fixes -->
+        <script src="fixes.js"></script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</body>
+</html>
