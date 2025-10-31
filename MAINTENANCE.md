@@ -248,6 +248,51 @@ document.getElementById('new-button').addEventListener('click', function() {
 #### Technical SEO
 - Check for broken links
 - Optimize page load speeds
+
+## 🌐 Custom Domain & DNS Management
+
+If you add or remove a custom domain for the site, follow these steps to keep GitHub Pages working as expected.
+
+### Removing the Custom Domain (return to GitHub Pages URL)
+1. Open the repository on GitHub > Settings > Pages.
+2. Under "Custom domain", clear the value and Save.
+3. Confirm "Build and deployment" Source is set to "GitHub Actions".
+4. Re-run the latest "Deploy to GitHub Pages" workflow (Actions tab) if needed.
+5. Visit the default Pages URL: `https://<username>.github.io/<repo>/`.
+
+Note: Our CI workflow also removes any `CNAME` file before publishing to prevent unintended redirects to an old domain.
+
+### Removing DNS Records at Your Registrar
+If your domain previously pointed to GitHub Pages, remove the records to stop resolution:
+- Apex domain (example.com): delete A records pointing to `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`.
+- Subdomain (www.example.com): delete the `CNAME` pointing to `<username>.github.io`.
+- Remove any `ALIAS`/`ANAME` or wildcard `*` records that point to GitHub Pages.
+- If using Cloudflare, disable/clear Page Rules and purge cache.
+
+### Verifying DNS Changes
+Run these commands (macOS/Linux) to check propagation:
+```bash
+dig +short ameladelianur.com A
+dig +short www.ameladelianur.com CNAME
+nslookup ameladelianur.com
+nslookup www.ameladelianur.com
+```
+All commands should return empty or non‑GitHub values after removal.
+
+### Caching & Propagation Tips
+- DNS changes may take up to a few hours (TTL dependent).
+- Use Private/Incognito window to bypass browser cache.
+- Flush local DNS on macOS:
+```bash
+sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
+```
+
+### Adding a Custom Domain (optional)
+If you want to use a domain again:
+1. Add A records (apex) to: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`.
+2. Add `CNAME` for `www` to `<username>.github.io`.
+3. In GitHub > Settings > Pages, set your custom domain and enable "Enforce HTTPS".
+4. Wait for certificate issuance and DNS propagation.
 - Ensure mobile responsiveness
 - Review structured data markup
 
