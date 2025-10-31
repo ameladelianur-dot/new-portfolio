@@ -40,3 +40,10 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deploy
         uses: actions/deploy-pages@v4
+
+      - name: Post-deploy summary
+        if: success()
+        run: |
+          echo "## GitHub Pages Deployment" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Live site: ${{ steps.deploy.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
